@@ -4,6 +4,8 @@ import styles from './App.module.css';
 import './theme.css';
 import './custom.css';
 import BleedingEdge from './pages/bleedingedge';
+import OpenSource from './pages/open-source';
+import MultiLang from './pages/multilang';
 
 const App: Component = () => {
   return (
@@ -24,6 +26,8 @@ const App: Component = () => {
       </h1>
       </div>
       <BleedingEdge></BleedingEdge>
+      <OpenSource></OpenSource>
+      <MultiLang></MultiLang>
     </div>
   );
 };
