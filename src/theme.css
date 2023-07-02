@@ -1,0 +1,27 @@
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+
+body {
+    background-color: var(--ctp-mocha-base);
+}
+
+body > * {
+    color: var(--ctp-mocha-text);
+}
+
+select {
+    background-color: transparent;
+    border: none;
+    color: var(--ctp-mocha-mauve);
+    font-size: 1em;
+    font-weight: bold;
+    appearance: none;
+}
+
+option {
+    background: var(--ctp-mocha-base);
+}
+
+li, a {
+    text-decoration: none;
+    color: var(--ctp-mocha-sky);
+}
