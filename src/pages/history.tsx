@@ -11,7 +11,7 @@ return (
         <ul>
             <li>Join Sunrin Internet High School</li>
             <li>Join AnA</li>
-            <li>Sunrinthon (not yet)</li>
+            <li>Sunrinthon</li>
         </ul>
     </div>
     );
