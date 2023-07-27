@@ -14,7 +14,7 @@ return (
             <li><a href="https://github.com/lawnseol/klojure">Klojure | Search koreanbots easy and efficient</a></li>
             <li><a href="https://github.com/mcCmd-language/mcCmd">McCmd | Minecraft-style Interpreter</a></li>
             <li><a href="https://github.com/misilelab/h3/tree/main/projects/dsb/ch">Crypto Hashing | Encrypting text</a></li>
-            <li><a href="https://github.com/misilelab/h3/tree/main/projects/sntapi">sntapi | Sunrint Meal Backend (of instagram bot)</a></li>
+            <li><a href="https://github.com/misilelab/h3/tree/main/projects/sntapi">sntapi | Sunrint Meal Backend (of <a href="https://www.instagram.com/today.sunrin.meal">instagram bot</a>)</a></li>
         </ul>
     </div>
     );
