@@ -12,6 +12,7 @@ return (
             <li>Join Sunrin Internet High School</li>
             <li>Join AnA</li>
             <li>Sunrinthon</li>
+            <li>Sunrint Algorithm Bronze Award</li>
         </ul>
     </div>
     );
