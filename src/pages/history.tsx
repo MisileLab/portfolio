@@ -13,6 +13,7 @@ return (
             <li>Join AnA</li>
             <li>Sunrinthon</li>
             <li>Sunrint Algorithm Bronze Award</li>
+            <li>Contentuniverse Hackathon</li>
         </ul>
     </div>
     );
