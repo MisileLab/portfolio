@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   solid-devtools:
-    specifier: ^0.28.1
-    version: 0.28.1(solid-js@1.8.5)(vite@5.0.0)
+    specifier: ^0.29.0
+    version: 0.29.1(solid-js@1.8.5)(vite@5.0.0)
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -581,8 +581,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@nothing-but/utils@0.11.1:
-    resolution: {integrity: sha512-auGB4xTzex2PXfrBOuiFi1GZ0H98n0Y82j6PQtRGK1AczkDT56ea0Eag91UQ6aAKs3yUb2WCSwQ19YY8/m/v0A==}
+  /@nothing-but/utils@0.12.0:
+    resolution: {integrity: sha512-9MPLeulw4SAHkfksn4uZWbxiaGXYqgFu63jlU83NsjxPC0ecYsAgReFGyiyC0INCjpe7p/cZgSGRtxJETyRupw==}
     dev: true
 
   /@rollup/rollup-android-arm-eabi@4.4.1:
@@ -681,12 +681,12 @@ packages:
     dev: true
     optional: true
 
-  /@solid-devtools/debugger@0.23.1(solid-js@1.8.5):
-    resolution: {integrity: sha512-EtwkqJ45MC00lKRPJPu7UtmIiC7GywxswuYAdpr4Dn+vc8c6k9osrogvnXO0Cu1wJVE+qJXRkAGTcMnJPynTtQ==}
+  /@solid-devtools/debugger@0.23.2(solid-js@1.8.5):
+    resolution: {integrity: sha512-/dIE98ffDECv+Wq/P4X2wgT01fAy1PuCSXYzpZDlTzcbr/a0GGD6sEG3UdKoLcuqtgk2qTNepQVvibEor9edgQ==}
     peerDependencies:
       solid-js: ^1.8.0
     dependencies:
-      '@nothing-but/utils': 0.11.1
+      '@nothing-but/utils': 0.12.0
       '@solid-devtools/shared': 0.13.1(solid-js@1.8.5)
       '@solid-primitives/bounds': 0.0.118(solid-js@1.8.5)
       '@solid-primitives/cursor': 0.0.112(solid-js@1.8.5)
@@ -1125,11 +1125,11 @@ packages:
     resolution: {integrity: sha512-5WDeMpv7rmEylsypRj1iwRVHE/QLsMLiZ+9savlNNQEVdgGia1iRMb7qyaAagY0wu/7+QTe6d2wldk/lgaLb6g==}
     engines: {node: '>=10'}
 
-  /solid-devtools@0.28.1(solid-js@1.8.5)(vite@5.0.0):
-    resolution: {integrity: sha512-SPwLgNra9qlemTq/vBz4t5s7C19zsHpXDWjzV5crr9bEVWVnBV6nKYradxQvR+lBZPXV/ImcWKvPhtXT0Hu2cg==}
+  /solid-devtools@0.29.1(solid-js@1.8.5)(vite@5.0.0):
+    resolution: {integrity: sha512-F5gi3Fhvo7Oy+sS42pX6UOgb4BTTHGHpF6tC4p5QJl/7FPYSlBTjuIa63wFw2XO0KrSTP0JO+MwuKS2T0rDQtA==}
     peerDependencies:
       solid-js: ^1.8.0
-      solid-start: ^0.2.20
+      solid-start: ^0.3.0
       vite: ^2.2.3 || ^3.0.0 || ^4.0.0
     peerDependenciesMeta:
       solid-start:
@@ -1140,7 +1140,7 @@ packages:
       '@babel/core': 7.23.3
       '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.23.3)
       '@babel/types': 7.23.3
-      '@solid-devtools/debugger': 0.23.1(solid-js@1.8.5)
+      '@solid-devtools/debugger': 0.23.2(solid-js@1.8.5)
       '@solid-devtools/shared': 0.13.1(solid-js@1.8.5)
       solid-js: 1.8.5
       vite: 5.0.0
