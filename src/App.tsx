@@ -82,7 +82,7 @@ const App = () => {
               return (
                 <HoverCard.Root>
                   <HoverCard.Trigger>
-                    {i().icon}
+                    <a href={i().url}>{i().icon}</a>
                   </HoverCard.Trigger>
                   <HoverCard.Content class="bg-ctp-surface0 hc">
                     <HoverCard.Arrow />
