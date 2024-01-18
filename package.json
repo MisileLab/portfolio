@@ -21,7 +21,7 @@
     "vite-plugin-solid": "2.8.1"
   },
   "dependencies": {
-    "@kobalte/core": "0.12.0",
+    "@kobalte/core": "0.12.1",
     "solid-icons": "1.1.0",
     "solid-js": "1.8.11"
   }
