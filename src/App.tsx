@@ -96,7 +96,7 @@ const App = () => {
     }
   ];
   return (
-    <div class="flex flex-col bg-ctp-base" style={"width: 100%;"}>
+    <div class="flex flex-col bg-ctp-base" style="width: 100%;">
       <div class="w-full h-screen flex justify-center items-center flex-col">
         <div class="text-3xl text-ctp-subtext0 font-normal mb-2">Many <span class="text-ctp-red">fails</span> lead to one <span class="text-ctp-green">success</span></div>
         <div class="text-4xl text-ctp-text font-bold">Misile</div>
