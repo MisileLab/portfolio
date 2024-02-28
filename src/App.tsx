@@ -1,7 +1,8 @@
 import { HoverCard } from "@kobalte/core";
-import { For, Index, JSX } from "solid-js";
+import { For, Index, JSX, Show } from "solid-js";
 import { AiFillGithub, AiOutlineMail } from 'solid-icons/ai';
 import { FaBrandsDiscord } from "solid-icons/fa";
+import { isMobileOnly } from "mobile-device-detect";
 
 interface RawStack {
   icon: string,
@@ -43,7 +44,7 @@ const projects: Project[] = [
   },
   {
     "name": "Ignofier+",
-    "description": "Fast gitignore generator that made with Rust",
+    "description": "Fast gitignore generator",
     "url": "https://github.com/misilelab/ignofierplus",
     "stacks": StringstoRawStack(["rust"])
   },
@@ -66,7 +67,7 @@ const projects: Project[] = [
     "stacks": StringstoRawStack(["python"])
   }, {
     "name": "calendar",
-    "description": "Simple calendar with tailwindcss, solidjs, tauri",
+    "description": "Simple calendar",
     "url": "https://github.com/MisileLab/calendar",
     "stacks": StringstoRawStack(["solidjs", "tailwindcss", "tauri", "rust"])
   }, {
@@ -98,7 +99,8 @@ const App = () => {
   return (
     <div class="flex flex-col bg-ctp-base" style="width: 100%;">
       <div class="w-full h-screen flex justify-center items-center flex-col">
-        <div class="text-3xl text-ctp-subtext0 font-normal mb-2">Many <span class="text-ctp-red">fails</span> lead to one <span class="text-ctp-green">success</span></div>
+        {!isMobileOnly && <div class="text-3xl text-ctp-subtext0 font-normal mb-2">Many <span class="text-ctp-red">fails</span> lead to one <span class="text-ctp-green">success</span></div>}
+        {isMobileOnly && <div class="text-2xl font-normal mb-2 text-ctp-green">Create Different Thing</div>}
         <div class="text-4xl text-ctp-text font-bold">Misile</div>
         <div class="flex flex-row mt-2 text-ctp-text space-x-1">
           <Index each={contacts}>
@@ -126,9 +128,11 @@ const App = () => {
           <table class="mt-4 border-spacing-2 border-separate w-full border-solid border-ctp-overlay border-2">
             <thead>
               <tr class="text-xl text-ctp-subtext1 w-1/2">
-                <th>Title</th>
-                <th>Description</th>
-                <th>Stacks</th>
+                <Show when={!isMobileOnly}>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Stacks</th>
+                </Show>
               </tr>
             </thead>
             <tbody class="text-2xl text-ctp-subtext0 text-center">
@@ -136,10 +140,14 @@ const App = () => {
                 {(i, _) => {
                   return (<tr>
                     <td><a href={i().url} class="text-ctp-blue">{i().name}</a></td>
-                    <td>{i().description}</td>
-                    <td class="flex flex-row"><For each={i().stacks}>
-                      {(j) => <a href={j.url}><img src={j.icon} class="w-8 h-8" /></a>}
-                    </For></td>
+                    <Show when={!isMobileOnly}>{
+                      <>
+                        <td>{i().description}</td>
+                        <td class="flex flex-row"><For each={i().stacks}>
+                          {(j) => <a href={j.url}><img src={j.icon} class="w-8 h-8" /></a>}
+                        </For></td>
+                      </>
+                    }</Show>
                   </tr>);
                 }}
               </Index>
