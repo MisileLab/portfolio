@@ -15,7 +15,9 @@ const Stack: {[id: string]: RawStack} = {
   "rust": {icon: "/icons/rust.svg", url: "https://www.rust-lang.org"},
   "python": {icon: "/icons/python.svg", url: "https://www.python.org"},
   "tauri": {icon: "/icons/tauri.svg", url: "https://tauri.app"},
-  "c": {icon: "/icons/c.svg", url: "https://clang.llvm.org"}
+  "c": {icon: "/icons/c.svg", url: "https://clang.llvm.org"},
+  "fastapi": {icon: "/icons/fastapi.svg", url: "https://fastapi.tiangolog.com"},
+  "graphql": {icon: "/icons/graphql.svg", url: "https://graphql.org"}
 };
 
 function StringstoRawStack(values: string[]): RawStack[] {
@@ -75,6 +77,11 @@ const projects: Project[] = [
     "description": "AnA website",
     "url": "https://github.com/sunrint-ana/anasite",
     "stacks": StringstoRawStack(["solidjs", "tailwindcss"])
+  }, {
+    "name": "lambda",
+    "description": "The simplest form",
+    "url": "https://github.com/MisileLab/h3/tree/main/projects/lambda",
+    "stacks": StringstoRawStack(["solidjs", "tailwindcss", "python", "fastapi", "graphql"])
   }
 ];
 
