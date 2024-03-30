@@ -1,8 +1,9 @@
 import { HoverCard } from "@kobalte/core";
 import { For, Index, JSX, Show } from "solid-js";
 import { AiFillGithub, AiOutlineMail } from 'solid-icons/ai';
-import { FaBrandsDiscord } from "solid-icons/fa";
+import { FaBrandsDiscord, FaSolidMoneyBill } from "solid-icons/fa";
 import { isMobileOnly } from "mobile-device-detect";
+import { A } from "@solidjs/router";
 
 interface RawStack {
   icon: string,
@@ -34,7 +35,8 @@ interface Project {
 interface Contact {
   icon: JSX.Element,
   content: string,
-  url: string
+  url: string,
+  override?: JSX.Element
 }
 
 const projects: Project[] = [
@@ -101,6 +103,12 @@ const App = () => {
       "content": "misile",
       "url": "https://discord.com",
       "icon": (<FaBrandsDiscord size={24}/>)
+    },
+    {
+      "content": "click the button",
+      "url": "https://misile.xyz/donate",
+      "icon": (<FaSolidMoneyBill size={24}/>),
+      "override": <A href="/donate"><FaSolidMoneyBill size={24}/></A>
     }
   ];
   return (
@@ -112,6 +120,9 @@ const App = () => {
         <div class="flex flex-row mt-2 text-ctp-text space-x-1">
           <Index each={contacts}>
             {(i, _) => {
+              if (i().override !== undefined) {
+                return i().override
+              }
               return (
                 <HoverCard.Root>
                   <HoverCard.Trigger>
