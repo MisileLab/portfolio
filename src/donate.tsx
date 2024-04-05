@@ -73,7 +73,7 @@ export function Donate(): JSX.Element {
             </For>
           </select>
          </div> 
-        {selected() !== "" && <h3 class="text-ctp-subtext0 text-xl">address: {selected()}</h3>}
+        {selected() !== "" && <h3 class="text-ctp-subtext0 text-sm lg:text-lg md:text-xl">address: {selected()}</h3>}
       </div>
     </div>
   );
