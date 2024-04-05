@@ -1,4 +1,4 @@
-import { For, JSX, createSignal } from "solid-js";
+import { For, JSX, createEffect, createSignal } from "solid-js";
 
 interface CPair {
   type: string,
@@ -57,6 +57,7 @@ const addresses: Array<CPair> = [{
 addresses.sort((a,b)=>(a.type>b.type)?1:((b.type>a.type)?-1:0))
 
 export function Donate(): JSX.Element {
+  createEffect(()=>alert(`address: ${selected()}`))
   const [selected, setSelected] = createSignal("");
   return (
     <div class="flex flex-col bg-ctp-base w-screen h-screen">
@@ -73,7 +74,6 @@ export function Donate(): JSX.Element {
             </For>
           </select>
          </div> 
-        {selected() !== "" && <h3 class="text-ctp-subtext0 overflow-auto text-xl">address: {selected()}</h3>}
       </div>
     </div>
   );
