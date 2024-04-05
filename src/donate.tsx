@@ -57,7 +57,7 @@ const addresses: Array<CPair> = [{
 addresses.sort((a,b)=>(a.type>b.type)?1:((b.type>a.type)?-1:0))
 
 export function Donate(): JSX.Element {
-  createEffect(()=>alert(`address: ${selected()}`))
+  createEffect(()=>{if(selected()!==""){navigator.clipboard.writeText(selected());alert("copied")}})
   const [selected, setSelected] = createSignal("");
   return (
     <div class="flex flex-col bg-ctp-base w-screen h-screen">
