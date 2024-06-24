@@ -45,31 +45,28 @@ const projects: Project[] = [
     "description": "This page",
     "url": "https://github.com/misilelab/portfolio",
     "stacks": StringstoRawStack(["solidjs", "tailwindcss"])
-  },
-  {
+  }, {
     "name": "Ignofier+",
     "description": "Fast gitignore generator",
     "url": "https://github.com/misilelab/ignofierplus",
     "stacks": StringstoRawStack(["rust"])
-  },
-  {
+  }, {
     "name": "Klojure",
     "description": "Search koreanbots with multiple keywords",
     "url": "https://github.com/lawnseol/klojure",
     "stacks": StringstoRawStack(["python"])
-  },
-  {
+  }, {
     "name": "McCmd",
     "description": "Minecraft-style Interpreter",
     "url": "https://github.com/mcCmd-language/xmccmd",
     "stacks": StringstoRawStack(["c"])
-  },
-  {
+  }, {
     "name": "sntapi",
     "description": "Sunrint school meal api",
     "url": "https://github.com/MisileLab/h3/tree/78c1d37ace0c612915e44e91e6cfec38d7842508/archives/sntapi",
     "stacks": StringstoRawStack(["python"])
   }, {
+    
     "name": "calendar",
     "description": "Simple calendar",
     "url": "https://github.com/MisileLab/calendar",
@@ -82,8 +79,13 @@ const projects: Project[] = [
   }, {
     "name": "lambda",
     "description": "The simplest form",
-    "url": "https://github.com/MisileLab/h3/tree/main/projects/lambda",
+    "url": "https://github.com/MisileLab/h3/tree/a13896cca09c5a93d9a98673e908a6e62df893c2/archives/lambda",
     "stacks": StringstoRawStack(["solidjs", "tailwindcss", "python", "fastapi", "graphql"])
+  }, {
+    "name": "xml",
+    "description": "eXtensible Microservice List (too many to view stacks)",
+    "url": "https://github.com/MisileLab/h3/tree/main/projects/xml",
+    "stacks": []
   }
 ];
 
