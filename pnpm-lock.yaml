@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@kobalte/core':
-    specifier: 0.13.3
-    version: 0.13.3(solid-js@1.8.18)
+    specifier: 0.13.4
+    version: 0.13.4(solid-js@1.8.18)
   '@solidjs/router':
     specifier: 0.14.1
     version: 0.14.1(solid-js@1.8.18)
@@ -521,14 +521,7 @@ packages:
   /@floating-ui/core@1.6.0:
     resolution: {integrity: sha512-PcF++MykgmTj3CIyOQbKA/hDzOAiqI3mhuoN44WRCopIs1sgoDoU4oty4Jtqaj/y3oDU6fnVSm4QG0a3t5i0+g==}
     dependencies:
-      '@floating-ui/utils': 0.2.1
-    dev: false
-
-  /@floating-ui/dom@1.6.3:
-    resolution: {integrity: sha512-RnDthu3mzPlQ31Ss/BTwQ1zjzIhr3lk1gZB1OC56h/1vEtaXkESrOqL5fQVMfXpwGtRwX+YsZBdyHtJMQnkArw==}
-    dependencies:
-      '@floating-ui/core': 1.6.0
-      '@floating-ui/utils': 0.2.1
+      '@floating-ui/utils': 0.2.3
     dev: false
 
   /@floating-ui/dom@1.6.6:
@@ -536,10 +529,6 @@ packages:
     dependencies:
       '@floating-ui/core': 1.6.0
       '@floating-ui/utils': 0.2.3
-    dev: false
-
-  /@floating-ui/utils@0.2.1:
-    resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
     dev: false
 
   /@floating-ui/utils@0.2.3:
@@ -600,15 +589,16 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@kobalte/core@0.13.3(solid-js@1.8.18):
-    resolution: {integrity: sha512-7ansvAwiIz2EYuifI8jmGj+ZNG/3R4hdkXZkCEFVKsQzq3vZpuSiAXgrdZeQOR4Zby7gxLOzpakjfv7D/3PPGw==}
+  /@kobalte/core@0.13.4(solid-js@1.8.18):
+    resolution: {integrity: sha512-ElvazoxoQU/z5pQUdHtXAzjiZA60J+Fo36WgO+j8sMvycIGwrlv+Fdr+uXcLSm1onYOYoSG1+vumD3Ce5OYzzw==}
     peerDependencies:
       solid-js: ^1.8.15
     dependencies:
-      '@floating-ui/dom': 1.6.3
+      '@floating-ui/dom': 1.6.6
       '@internationalized/date': 3.5.2
       '@internationalized/number': 3.5.1
       '@kobalte/utils': 0.9.0(solid-js@1.8.18)
+      '@solid-primitives/props': 3.1.11(solid-js@1.8.18)
       solid-js: 1.8.18
       solid-presence: 0.1.7(solid-js@1.8.18)
       solid-prevent-scroll: 0.1.6(solid-js@1.8.18)
