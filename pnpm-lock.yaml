@@ -9,8 +9,8 @@ dependencies:
     specifier: 0.13.4
     version: 0.13.4(solid-js@1.8.21)
   '@solidjs/router':
-    specifier: 0.14.2
-    version: 0.14.2(solid-js@1.8.21)
+    specifier: 0.14.3
+    version: 0.14.3(solid-js@1.8.21)
   mobile-device-detect:
     specifier: 0.4.3
     version: 0.4.3
@@ -981,8 +981,8 @@ packages:
     dependencies:
       solid-js: 1.8.21
 
-  /@solidjs/router@0.14.2(solid-js@1.8.21):
-    resolution: {integrity: sha512-JaJe7XJcZTyOfMOIVHmLO+3wP3akm5QQesrDU4XLn/JRMxozBzCaNXBsK7F8pBuDgxzRRxTV8RvXeS09HGXv6Q==}
+  /@solidjs/router@0.14.3(solid-js@1.8.21):
+    resolution: {integrity: sha512-9p4k4zL2baK/1XRQALbFcaQ4IikjkWmxqYQtFqLzjONUejhL1uqJHtzxB4tZjmNqtRANVRnTDbJfzjvaD9k+pQ==}
     peerDependencies:
       solid-js: ^1.8.6
     dependencies:
