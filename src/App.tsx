@@ -86,6 +86,11 @@ const projects: Project[] = [
     "description": "eXtensible Microservice List (too many to view stacks)",
     "url": "https://github.com/MisileLab/h3/tree/main/projects/xml",
     "stacks": []
+  }, {
+    "name": "butter",
+    "description": "The ai assistant that can search, listen, and say with voice",
+    "url": "https://github.com/misilelab/butter",
+    "stacks": StringstoRawStack(["python"])
   }
 ];
 
